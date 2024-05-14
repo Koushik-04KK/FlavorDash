@@ -17,7 +17,7 @@ Exciting news! I'm thrilled to introduce FlavorDash, a mouthwatering food orderi
 
 #### Let's Dig In:
 
-Hungry for a taste of FlavorDash? Click [here](https://koushik-04kk.github.io/FlavorDash/) to start ordering your favorite dishes now!
+Hungry for a taste of FlavorDash? start ordering your favorite dishes now!
 
 #### Stay Updated:
 
