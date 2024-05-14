@@ -27,3 +27,7 @@ box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 backdrop-filter: blur(6.6px);
 -webkit-backdrop-filter: blur(6.6px);
 }
+
+.thanks{
+    background-image: radial-gradient(#fff8db, #fae38c);
+}
