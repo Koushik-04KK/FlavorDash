@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,10 +8,88 @@
     <title>FlavorDash-Savor the Speed, Taste the Variety.</title>
 </head>
 <body>
+  <!--navbar-->
+  <section>
+    <div class="2xl:container bg-[#FFFF]">
+      <div class="w-[90%] mx-auto grid grid-cols-1 md:grid-cols-2  ">
+          <div class="flex justify-between items-center md:justify-start md:items-center h-[10vh]">
+              <img src="./assets/FlavorDash/Screenshot_2024-05-14_223329-removebg-preview.png" alt="imga" class="h-16 p-2 md:h-20 md:pt-4">
+              <div class=" pr-4 md:hidden cursor-pointer">
+                  <svg fill="none" viewbox="0 0 15 15" height="20px" width="20px" id="menuele">
+                      <path
+                        fill="#E1B83A"
+                        fillrule="evenodd"
+                        d="M1.5 3a.5.5 0 000 1h12a.5.5 0 000-1h-12zM1 7.5a.5.5 0 01.5-.5h12a.5.5 0 010 1h-12a.5.5 0 01-.5-.5zm0 4a.5.5 0 01.5-.5h12a.5.5 0 010 1h-12a.5.5 0 01-.5-.5z"
+                        cliprule="evenodd"
+                      />
+                    </svg>
+                    <svg fill="none" viewbox="0 0 15 15" height="20px" width="20px" class="hidden" id="crossele">
+                      <path
+                        fill="#E1B83A"
+                        fillrule="evenodd"
+                        d="M11.782 4.032a.575.575 0 10-.813-.814L7.5 6.687 4.032 3.218a.575.575 0 00-.814.814L6.687 7.5l-3.469 3.468a.575.575 0 00.814.814L7.5 8.313l3.469 3.469a.575.575 0 00.813-.814L8.313 7.5l3.469-3.468z"
+                        cliprule="evenodd"
+                      />
+                    </svg>
+              </div>
+          </div>
+          
+          <div class="bg-[#FFFFF] hidden md:block  " id="cont" >
+              <ul class=" flex flex-col justify-center items-center space-y-3 py-3 md:flex-row md:justify-center md:items-center md:h-[100%] md:space-x-10">
+                  <a href="#whychooseus"><li id="wcu" class="text-[#0B3C49] font-['Spinnaker'] cursor-pointer">Why Choose Us?</li></a>
+                  <a href="#exploremenu"><li id="em" class="md:pb-3 text-[#0B3C49] font-['Spinnaker'] cursor-pointer ">Explore Menu</li></a>
+                  <a href="#payment"><li id="dp"class="md:pb-3 text-[#0B3C49] font-['Spinnaker'] cursor-pointer">Delivery & Payment</li></a>
+                  <a href="#followus"><li id="fu"class="md:pb-3 text-[#0B3C49] font-['Spinnaker'] cursor-pointer">Follow Us</li></a>
+              </ul>
+          </div>
+          
+      </div>
+  </div>
+  <script>
+      const menuelement=document.getElementById("menuele")
+      const crosselement=document.getElementById("crossele")
+      const content =document.getElementById("cont")
+      const id1=document.getElementById("wcu")
+      const id2=document.getElementById("em")
+      const id3=document.getElementById("dp")
+      const id4=document.getElementById("fu")
+      menuelement.addEventListener("click",()=>{
+          content.classList.remove("hidden")
+          crosselement.classList.toggle("hidden")
+          menuelement.classList.toggle("hidden")
+      })
+      crosselement.addEventListener("click",()=>{
+          content.classList.add("hidden")
+          crosselement.classList.toggle("hidden")
+          menuelement.classList.toggle("hidden")
+      })
+      id1.addEventListener("click",()=>{
+          content.classList.toggle("hidden")
+          crosselement.classList.toggle("hidden")
+          menuelement.classList.toggle("hidden")
+      })
+      id2.addEventListener("click",()=>{
+          content.classList.toggle("hidden")
+          crosselement.classList.toggle("hidden")
+          menuelement.classList.toggle("hidden")
+      })
+      id3.addEventListener("click",()=>{
+          content.classList.toggle("hidden")
+          crosselement.classList.toggle("hidden")
+          menuelement.classList.toggle("hidden")
+      })
+      id4.addEventListener("click",()=>{
+          content.classList.toggle("hidden")
+          crosselement.classList.toggle("hidden")
+          menuelement.classList.toggle("hidden")
+      })
+  
+  </script>
+  </section>
     <!--Hero Section-->
     <section>
          <div class="2xl:container background">
-          <div class="w-[90%] mx-auto  h-[100%]">
+          <div class="w-[90%] mx-auto h-[100%]">
             <div class=" flex flex-col justify-center items-center gap-6  h-[100%] text-center">
               <div class="ct p-16 space-y-2 flex flex-col gap-6">
                 <h1 class="text-[#140A00] text-5xl font-extrabold font-['Spinnaker'] mt-2 ">Get Delicious Food Anytime</h1>
@@ -32,7 +110,7 @@
 
     </section >
     <!--Why choose us section-->
-    <section class=" bg-[#F9FBFE] flex justify-center">
+    <section class=" bg-[#F9FBFE] flex justify-center " id="whychooseus">
         <div class="2xl:container bg-[#F9FBFE] px-6 m">
           <div class="w-[90%] mx-auto grid grid-cols-1 py-3">
             <div>
@@ -64,7 +142,7 @@
     </div>
     </section>
     <!--Explore Menu Section-->
-    <section class=" flex justify-center" >
+    <section class=" flex justify-center" id="exploremenu" >
         <div class=" 2xl:container px-14 py-3 ">
           <div class="w-[90%] mx-auto grif grid-cols-1 py-4">
             <div>
@@ -215,8 +293,8 @@ width="1em"
     </div>
    </section>
    <!--Payment Section-->
-   <section>
-    <div class="2xl:container bg-white">
+   <section id="payment">
+    <div class="2xl:container bg-white" >
       <div class="w-[90%] mx-auto grid grid-cols-1 md:grid-cols-2 pt-7 ">
         <div class="flex flex-col gap-4 items-start px-14 order-2 md:order-1">
           <h1 class="font-['Gluten'] text-3xl font-extrabold pt-3">Delivery and Payment </h1>
@@ -243,7 +321,7 @@ width="1em"
    <section>
     <div class="2xl:container thanks"">
       <div class="w-[90%] mx-auto grid grid-cols-1 md:grid-cols-2 ">
-          <div class="flex flex flex-col items-start px-14 pt-7 order-3 md:order-1">
+          <div class="flex flex-col items-start px-14 pt-7 order-3 md:order-1">
             <h1 class="font-['Gluten'] text-3xl font-bold pt-3">Thank you for being a valuable customer to us.  </h1>
             <p class="font-['Spinnaker'] text-base text-gray-700 mt-2" >We have a surprise gift for you  </p>
             <div class="pt-3 flex flex-col justify-center items-center order-1 md:order-2 mt-8">
@@ -257,7 +335,7 @@ width="1em"
     </div>
    </section>
    <!--Follow us section-->
-   <section>
+   <section id="followus">
     <div class="2xl:container">
       <div class="w-[90%] mx-auto grid grid-cols-1">
         <div  class="flex flex-col justify-center items-center">
